@@ -1,0 +1,20 @@
+#include <iostream>
+#include "Scheduler.h"
+using namespace std;
+
+int main()
+{
+    Scheduler scheduler;
+
+    scheduler.addJob(1, 3, 5);
+    scheduler.addJob(2, 5, 6);
+    scheduler.addJob(4, 6, 5);
+    scheduler.addJob(6, 7, 4);
+    scheduler.addJob(5, 8, 11);
+    scheduler.addJob(7, 9, 2);
+
+    scheduler.solve();
+    scheduler.printSolution();
+
+    return 0;
+}
